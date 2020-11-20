@@ -1,4 +1,4 @@
-# rollup-plugin-import-modules
+# rollup-plugin-prepend-modules
 
 A Rollup plugin which adds import modules to input entry
 
@@ -11,7 +11,7 @@ This plugin requires an [LTS](https://github.com/nodejs/Release) Node version (v
 Using npm:
 
 ```console
-npm install @piotr-cz/rollup-plugin-import-modules --save-dev
+npm install @piotr-cz/rollup-plugin-prepend-modules --save-dev
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ npm install @piotr-cz/rollup-plugin-import-modules --save-dev
 Create a `rollup.config.js` [configuration file](https://www.rollupjs.org/guide/en/#configuration-files) and import the plugin:
 
 ```js
-import importModules from '@piotr-cz/rollup-plugin-import-modules';
+import prependModules from '@piotr-cz/rollup-plugin-prepend-modules';
 
 export default {
   input: 'src/index.js',
@@ -28,7 +28,7 @@ export default {
     format: 'cjs'
   },
   plugins: [
-    process.env.NODE_ENV === 'development' && importModules({
+    process.env.NODE_ENV === 'development' && prependModules({
       modules: ['preact/debug'],
       sourceMap: true
     })
@@ -47,7 +47,7 @@ The configuration above will add `import 'preact/debug` input entry (`src/index.
 type: `string[]`<br />
 default: `[]`
 
-An array of modules to import
+An array of modules to prepend
 
 ### `sourceMap`
 

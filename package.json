@@ -1,11 +1,11 @@
 {
-  "name": "@piotr-cz/rollup-plugin-import-modules",
+  "name": "@piotr-cz/rollup-plugin-prepend-modules",
   "version": "1.0.0",
   "description": "A Rollup plugin which adds import modules to input entry",
   "license": "MIT",
   "author": "Piotr Konieczny <hello@piotr.cz> (https://www.piotr.cz)",
-  "main": "dist/rollup-plugin-import-modules.cjs.js",
-  "module": "dist/rollup-plugin-import-modules.es.js",
+  "main": "dist/rollup-plugin-prepend-modules.cjs.js",
+  "module": "dist/rollup-plugin-prepend-modules.es.js",
   "engines": {
     "node": ">=14.15.0"
   },
@@ -23,6 +23,7 @@
     "rollup",
     "plugin",
     "import",
+    "prepend",
     "modules"
   ],
   "peerDependencies": {

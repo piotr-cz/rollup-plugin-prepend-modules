@@ -7,7 +7,7 @@ import MagicString from 'magic-string';
  */
 
 /**
- * @typedef {Object} ImportModulesOptions
+ * @typedef {Object} PrependModulesOptions
  * @property {string[]} modules - Module to prepend
  * @property {boolean} [sourceMap] - Enable source maps
  * @property {boolean} [sourcemap] - Enable source maps
@@ -15,7 +15,7 @@ import MagicString from 'magic-string';
 
 /**
  * A rollup plugin which adds import modules to input entry
- * @param {ImportModulesOptions} options
+ * @param {PrependModulesOptions} options
  * @return {RollupPlugin}
  */
 export default function rollupPluginImportModules(options = { modules: [], sourceMap: true }) {
@@ -30,7 +30,7 @@ export default function rollupPluginImportModules(options = { modules: [], sourc
   const inputPaths = [];
 
   return {
-    name: 'import-modules',
+    name: 'prepend-modules',
 
     buildStart(inputOptions) {
       // Read from array or object values
@@ -58,8 +58,8 @@ export default function rollupPluginImportModules(options = { modules: [], sourc
   function executePrepend(code) {
     const magicString = new MagicString(code);
 
-    const imports = options.modules.map(importModule =>
-      `import '${importModule}';`
+    const imports = options.modules.map(prependModule =>
+      `import '${prependModule}';`
     );
 
     const importBlock = imports.join('\n');
