@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "A Rollup plugin which adds import modules to input entry",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piotr-cz/rollup-plugin-prepend-modules.git"
+  },
   "author": "Piotr Konieczny <hello@piotr.cz> (https://www.piotr.cz)",
+  "homepage": "https://github.com/piotr-cz/rollup-plugin-prepend-modules",
+  "bugs": "https://github.com/piotr-cz/rollup-plugin-prepend-modules/issues",
   "main": "dist/rollup-plugin-prepend-modules.cjs.js",
   "module": "dist/rollup-plugin-prepend-modules.es.js",
   "engines": {
