@@ -1,4 +1,4 @@
-# rollup-plugin-prepend-modules
+# @piotr-cz/rollup-plugin-prepend-modules
 
 A Rollup plugin which adds import modules to input entry
 
