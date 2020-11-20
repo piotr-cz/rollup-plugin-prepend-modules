@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+
+  "compilerOptions": {
+    "lib": ["ES6"],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "checkJs": true,
+    "noEmit": true,
+    "noEmitOnError": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "pretty": true,
+    "skipDefaultLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2017"
+  },
+
+  "include": [
+    "src/**/*"
+  ]
+}
