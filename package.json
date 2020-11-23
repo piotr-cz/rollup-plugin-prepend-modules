@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "npmpublish": "npm publish --access public",
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
