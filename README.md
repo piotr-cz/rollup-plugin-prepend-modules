@@ -1,4 +1,9 @@
-# @piotr-cz/rollup-plugin-prepend-modules
+[npm]: https://img.shields.io/npm/v/@piotr-cz/rollup-plugin-prepend-modules
+[npm-url]: https://www.npmjs.com/package/@piotr-cz/rollup-plugin-prepend-modules
+
+[![npm][npm]][npm-url]
+
+# Rollup plugin to prepend modules
 
 A Rollup plugin which adds import modules to input entry
 
