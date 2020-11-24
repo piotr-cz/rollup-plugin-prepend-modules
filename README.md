@@ -49,7 +49,7 @@ Then call `rollup` either via the [CLI](https://www.rollupjs.org/guide/en/#comma
 npx rollup --config --environment NODE_ENV:development
 ```
 
-The configuration above will add `import 'preact/debug` input entry (`src/index.js` in this case).
+The configuration above will add `import 'preact/debug';` to input entry (`src/index.js` in this case).
 
 ## Options
 
