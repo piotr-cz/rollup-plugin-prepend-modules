@@ -33,6 +33,7 @@ export default {
     format: 'cjs'
   },
   plugins: [
+    // Use plugin only in development environment
     process.env.NODE_ENV === 'development' && prependModules({
       modules: ['preact/debug'],
       sourceMap: true
@@ -41,7 +42,12 @@ export default {
 };
 ```
 
-Then call `rollup` either via the [CLI](https://www.rollupjs.org/guide/en/#command-line-reference) or the [API](https://www.rollupjs.org/guide/en/#javascript-api).
+Then call `rollup` either via the [CLI](https://www.rollupjs.org/guide/en/#command-line-reference) or the [API](https://www.rollupjs.org/guide/en/#javascript-api):
+
+```console
+# Optionally set environment to development
+npx rollup --config --environment NODE_ENV:development
+```
 
 The configuration above will add `import 'preact/debug` input entry (`src/index.js` in this case).
 
