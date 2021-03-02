@@ -8,7 +8,7 @@ import MagicString from 'magic-string';
 
 /**
  * @typedef {Object} PrependModulesOptions
- * @property {string[]} modules - Module to prepend
+ * @property {string[]} modules - Modules to prepend
  * @property {boolean} [sourceMap] - Enable source maps
  * @property {boolean} [sourcemap] - Enable source maps
  */
