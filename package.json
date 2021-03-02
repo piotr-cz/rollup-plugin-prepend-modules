@@ -12,6 +12,7 @@
   "bugs": "https://github.com/piotr-cz/rollup-plugin-prepend-modules/issues",
   "main": "dist/rollup-plugin-prepend-modules.cjs.js",
   "module": "dist/rollup-plugin-prepend-modules.es.js",
+  "types": "index.d.ts",
   "engines": {
     "node": ">=14.15.0"
   },
