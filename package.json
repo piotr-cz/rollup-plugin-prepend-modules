@@ -41,6 +41,6 @@
     "magic-string": "^0.25.7"
   },
   "devDependencies": {
-    "rollup": "^2.23.0"
+    "rollup": "^2.40.0"
   }
 }
