@@ -1,6 +1,6 @@
 {
   "name": "@piotr-cz/rollup-plugin-prepend-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Rollup plugin which adds import modules to input entry",
   "license": "MIT",
   "repository": {
