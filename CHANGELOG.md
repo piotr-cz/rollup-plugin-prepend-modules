@@ -9,11 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Do not gitignore package.lock
 - Add type definitions to package.lock files
 
-## [1.0.1]
+## [1.0.1] - 2021-03-03
 ### Added
 - Type definitions
 
-## [1.0.0]
+## [1.0.0] - 2020-11-23
 ### Added
 - Inital release
 
