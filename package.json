@@ -14,6 +14,10 @@
   "main": "dist/rollup-plugin-prepend-modules.cjs.js",
   "module": "dist/rollup-plugin-prepend-modules.es.js",
   "types": "index.d.ts",
+  "exports": {
+    "import": "./dist/rollup-plugin-prepend-modules.es.js",
+    "require": "./dist/rollup-plugin-prepend-modules.cjs.js"
+  },
   "engines": {
     "node": ">=14.15.0"
   },
