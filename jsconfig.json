@@ -19,7 +19,7 @@
 
   "include": [
     "src/**/*",
-    "index.d.ts",
-    "rollup.config.js"
+    "types/**/*",
+    "rollup.config.mjs"
   ]
 }

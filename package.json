@@ -13,9 +13,9 @@
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "types": "./index.d.ts",
+  "types": "./types/index.d.ts",
   "exports": {
-    "types": "./index.d.ts",
+    "types": "./types/index.d.ts",
     "import": "./dist/index.mjs",
     "require": "./dist/index.cjs"
   },
@@ -30,7 +30,7 @@
   },
   "files": [
     "dist",
-    "index.d.ts",
+    "types",
     "LICENSE",
     "README.md"
   ],
