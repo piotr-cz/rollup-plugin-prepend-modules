@@ -10,7 +10,7 @@ export default {
   input: 'src/index.js',
   external: [...externalDeps, ...nodeDeps],
   output: [
-    { file: pkg.module, format: 'es' },
-    { file: pkg.main, format: 'cjs', exports: 'auto' },
+    { file: pkg.module, format: 'esm' },
+    { file: pkg.main, format: 'cjs' },
   ],
 };

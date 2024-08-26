@@ -30,7 +30,7 @@ export default {
   input: 'src/index.js',
   output: {
     dir: 'output',
-    format: 'cjs'
+    format: 'esm'
   },
   plugins: [
     // Use plugin only in development environment

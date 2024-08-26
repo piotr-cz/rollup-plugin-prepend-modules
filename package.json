@@ -11,12 +11,12 @@
   "homepage": "https://github.com/piotr-cz/rollup-plugin-prepend-modules",
   "bugs": "https://github.com/piotr-cz/rollup-plugin-prepend-modules/issues",
   "type": "module",
-  "main": "dist/rollup-plugin-prepend-modules.cjs.js",
-  "module": "dist/rollup-plugin-prepend-modules.es.js",
+  "main": "dist/index.mjs",
+  "module": "dist/index.cjs",
   "types": "index.d.ts",
   "exports": {
-    "import": "./dist/rollup-plugin-prepend-modules.es.js",
-    "require": "./dist/rollup-plugin-prepend-modules.cjs.js"
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
   },
   "engines": {
     "node": ">=14.15.0"
