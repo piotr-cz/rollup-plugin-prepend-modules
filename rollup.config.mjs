@@ -6,7 +6,6 @@ const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 
 /** @type {import('rollup').RollupOptions} */
 export default {
   input: 'src/index.js',
-  // external: [...externalDeps, ...nodeDeps],
   external: Object.keys(pkg.dependencies)
     .concat(Object.keys(pkg.peerDependencies))
     .concat(builtinModules),
