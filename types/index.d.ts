@@ -13,5 +13,5 @@ declare module '@piotr-cz/rollup-plugin-prepend-modules' {
     sourceMap?: boolean
   }
 
-  export default function rollupPluginImportModules(options: Options): Plugin
+  export default function rollupPluginPrependModules(options: Options): Plugin
 }

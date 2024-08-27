@@ -18,7 +18,7 @@ import MagicString from 'magic-string';
  * @param {PrependModulesOptions} options
  * @return {RollupPlugin}
  */
-export default function rollupPluginImportModules(options = { modules: [], sourceMap: true }) {
+export default function rollupPluginPrependModules(options = { modules: [], sourceMap: true }) {
   if (!options) {
     throw new Error('Missing options')
   }
