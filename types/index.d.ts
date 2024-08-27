@@ -1,17 +1,17 @@
-declare module '@piotr-cz/rollup-plugin-prepend-modules' {
+import { Plugin } from 'rollup'
 
-  import { Plugin } from 'rollup'
+interface RollupPrependModulesOptions {
+  /**
+   * Modules to prepend
+   */
+  modules: string[];
+  /**
+   * Enable source maps
+   */
+  sourceMap?: boolean;
 
-  export interface Options {
-    /**
-     * Modules to prepend
-     */
-    modules: string[]
-    /**
-     * Enable source maps
-     */
-    sourceMap?: boolean
-  }
-
-  export default function rollupPluginPrependModules(options: Options): Plugin
+  /** @deprecated */
+  sourcemap?: boolean;
 }
+
+export default function rollupPluginPrependModules(options: RollupPrependModulesOptions): Plugin

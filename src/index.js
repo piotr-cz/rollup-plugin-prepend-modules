@@ -2,21 +2,13 @@ import path from 'path';
 import MagicString from 'magic-string';
 
 /**
- * @typedef { import('rollup').Plugin } RollupPlugin
+ * @typedef { import('../types/index.d.ts').default } RollupPluginPrependModules
  * @typedef { import('rollup').TransformResult } RollupPluginTransformResult
  */
 
 /**
- * @typedef {Object} PrependModulesOptions
- * @property {string[]} modules - Modules to prepend
- * @property {boolean} [sourceMap] - Enable source maps
- * @property {boolean} [sourcemap] - Enable source maps
- */
-
-/**
  * A rollup plugin which adds import modules to input entry
- * @param {PrependModulesOptions} options
- * @return {RollupPlugin}
+ * @type {RollupPluginPrependModules}
  */
 export default function rollupPluginPrependModules(options = { modules: [], sourceMap: true }) {
   if (!options) {
